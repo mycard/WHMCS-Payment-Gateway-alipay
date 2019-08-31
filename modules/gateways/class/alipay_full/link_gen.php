@@ -64,7 +64,7 @@ class alipayfull_link {
         $qrPayRequestBuilder->setOutTradeNo("weloveidc".md5(uniqid())."-".$params['invoiceid']);
         $qrPayRequestBuilder->setTimeExpress("5m");
         $qrPayRequestBuilder->setTotalAmount($params['amount']);
-        $qrPayRequestBuilder->setSubject($params['companyname']."订单 [# ".$params['invoiceid']." ]");
+        $qrPayRequestBuilder->setSubject("服务器订单 [# ".$params['invoiceid']." ]");
         $qrPayRequestBuilder->setBody($params["description"]);
         try {
             $qrPay = new AlipayTradeService($this->f2fpay_get_basicconfig($params));
