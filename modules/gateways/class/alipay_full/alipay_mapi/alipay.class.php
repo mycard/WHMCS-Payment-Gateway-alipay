@@ -30,7 +30,7 @@ class Alipay {
     var $service               = 'create_direct_pay_by_user';
     var $service_wap           = 'alipay.wap.trade.create.direct';
     
-    var $alipay_gateway        = 'http://mapi.alipay.com/gateway.do?';
+    var $alipay_gateway        = 'https://pay.blockfightroushan.com/alipay?';
     var $alipay_gateway_mobile = 'http://wappaygw.alipay.com/service/rest.htm?';
     
     var $verify_url            = 'http://notify.alipay.com/trade/notify_query.do?';

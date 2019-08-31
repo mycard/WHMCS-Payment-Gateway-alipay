@@ -102,8 +102,8 @@ class alipayfull_link {
         "input_charset" => "utf-8",
         "transport" => "https",
         "payment_type" => 1,
-        "return_url" =>  "https://pay2.blockfightroushan.com/modules/gateways/callback/alipay_full/return.php",
-        "notify_url" => "https://pay2.blockfightroushan.com/modules/gateways/callback/alipay_full/notify.php",
+        "return_url" =>  "https://pay2.blockfightroushan.com:444/modules/gateways/callback/alipay_full/return.php",
+        "notify_url" => "https://pay2.blockfightroushan.com:444/modules/gateways/callback/alipay_full/notify.php",
         "cacert" => dirname(__FILE__) . "/alipay_mapi/cacert.pem",
         ];
     }
@@ -128,7 +128,7 @@ class alipayfull_link {
             'charset' => "UTF-8",
             'gatewayUrl' => "https://openapi.alipay.com/gateway.do",
             'app_id' => $params['app_id'],
-            'notify_url' => "https://pay2.blockfightroushan.com/modules/gateways/callback/alipay_full/f2fpay_notify.php",
+            'notify_url' => "https://pay2.blockfightroushan.com:444/modules/gateways/callback/alipay_full/f2fpay_notify.php",
             'MaxQueryRetry' => "10",
             'QueryDuration' => "3"
         ];
